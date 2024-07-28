@@ -1,0 +1,372 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+}
+:root
+{
+    --main-color:#ffd43b;
+    --main-paddding:60px;
+    --secoundry-color:#ffe99c;
+}
+@media (max-width:767px) {
+    .colomun  .image img
+    {
+        display: none;
+    }
+    .about-inside
+    {
+        flex-direction: column;
+    }  
+}
+@media (max-width:975px)
+{
+    .colomun  .image img
+    {
+        display: none;
+    }   
+ 
+}
+@media (min-width:768px) and (max-width:773px) {
+    
+    .about-inside .img::before
+    {
+       display: none;
+    }
+}
+.container
+{
+    padding-left: 25px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header
+{   
+    padding: 20px;
+   
+}
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+header .container .logo
+{
+    margin: -19px -20px
+}
+header .container .logo img
+{
+    width: 55px;
+    height: 50px;
+}
+header .container .links
+{
+    position: relative;
+}
+header .container .links i
+{
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+header .links ul
+{
+    list-style: none;
+    margin:5px 0;
+    padding: 0;
+    background-color: #9b9b9b62;
+    position: absolute;
+    right: -20px;
+    min-width: 200px;
+    top: 100%;
+    display: none;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+header .container ul li a
+{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+header .container  .links:hover ul
+{
+    display: block;
+}
+header .container ul li a:hover
+{
+    color: var(--main-color);
+    padding-left: 25px;
+    border-left: 4px solid var(--main-color);
+    
+}
+/* start with main */
+.lending
+{
+    background-image: url("../photo/background.jpg");
+    background-size:cover ;
+    height: calc(100vh - 60px);
+    position: relative;
+}
+.lending .text 
+{
+   position: absolute;
+   color: var(--main-color);
+   top: 50%;
+   left: 32%;
+   transform: translate(-50px, -50px);
+   text-align: center;
+}
+.lending .text h1
+{
+    font-weight: 700;
+    font-size: 40px;
+}
+.services
+{
+    padding-bottom: var(--main-paddding);
+    padding-bottom: var(--main-paddding);
+}
+.special-heading 
+{
+    
+    text-align: center;
+}
+.special-heading h2
+{
+    font-size: 80px;
+    font-weight: 800;
+    color:var(--secoundry-color);
+    
+}
+.special-heading p
+{
+    margin-top: -95px;
+    font-size: 12px;
+}
+@media (max-width:767px) {
+    .special-heading h2
+    {
+        font-size: 50px;
+        max-width: 100%;
+    }
+}
+.services .container .inside-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.colomun .col i
+{
+    color: #ffe99c;
+}
+.colomun  .image img
+{
+    width: 250px;
+    height: 250px;
+}
+.menu
+{
+    background-color: #f6f6f6d7;
+    padding-top: 10px;
+    padding-bottom:70px;
+}
+.menu-inside
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+    margin-top: 40px;
+    
+}
+.menu-inside .colom
+{
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+@media (max-width:767px) 
+{
+    .menu-inside .colom
+    {
+       max-width: 70%;
+    }
+}
+.menu-inside .colom img{
+    width: 100%;
+}
+.about
+{
+    padding-top: 10px;
+    padding-bottom: var(--main-paddding);
+}
+.about .about-inside
+{   
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25px;
+    
+}
+.about-inside .os
+{
+    flex-basis: calc(100% - 350px);
+}
+.about .about-inside .img
+{
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.about .about-inside .img img
+{
+   height: 300px;
+   width: 250px;
+   margin-left: 30px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+
+}
+.about-inside .img::before
+{
+    content: "";
+    width: 60px;
+    height: 330px;
+    background-color: #4b4b4b;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+hr
+{
+    width: 50%;
+    display: block;
+    border-color: var(--main-color);
+    
+}
+.about-inside .os  h3
+{
+    text-align: center;
+}
+.about-inside .os .s p
+{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15vw;
+    font-weight: bold;
+    margin: unset;
+    background-image: url("../photo/yellow.jpg");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    text-align: center; 
+}
+.contact
+{
+    background-color: #f6f6f6;
+    padding-top: 5px;
+    padding-bottom:var(--main-paddding) ;
+}
+.contact .contact-inside
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    gap: 40px;
+    margin-top: 10px;
+
+}
+.contact .contact-inside .con
+{
+    margin-top: 50px;
+    padding-bottom: 0px;
+}
+.contact .contact-inside .con .mab-image img
+{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+    height: 230px;
+}
+@media (max-width:767px) 
+{
+    .contact .contact-inside .con .mab-image img
+    {
+        width: 60%;
+    }
+}
+.two .form 
+{
+   margin-top: 40px;
+}
+
+.con .text i
+{
+    color: var(--main-color);
+}
+form input
+{
+    
+    margin: 30px 20px;
+    padding: 10px;
+    border: none;
+    background-color: #4b4b4b;
+    text-align:start;
+    border-radius:10px ;
+    width: 320px;
+    max-width: 100%;
+    color: white;
+    cursor: var(--main-color);
+}
+form input::placeholder
+{
+    color: white;
+}
+form  .submit
+{
+    margin: 30px 20px;
+    padding: 10px;
+    border: none;
+    background-color: var(--main-color);
+    text-align:start;
+    border-radius:10px ;
+    width: 190px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:767px) 
+{
+    form input
+    {
+        width: 250px;
+    }
+}
+footer
+{
+    padding: 20px;
+    text-align: center;
+    background-color: #4b4b4b;
+    color: white;
+}
+footer span
+{
+    color: var(--main-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
